@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drh">
+        <item>Blood Type</item>
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+    </string-array>
+    
+    <string-array name="Renshus">
+        <item>Reshus</item>
+        <item>Negative</item>
+        <item>Positive</item>
+    </string-array>
+    
+    <string-array name="Jb">
+        <item>Job</item>
+        <item>Wirausaha</item>
+        <item>Programmer</item>
+        <item>Dosen</item>
+    </string-array>
+</resources>

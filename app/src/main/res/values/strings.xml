@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TAMPILAN UTAMA</string>
+    //tampilan pertama
+    <string name="usrnm">Username</string>
+    <string name="pwsd">Password</string>
+    <string name="login">Login</string>
+    <string name="login_FB">Connect with Facebook</string>
+    <string name="reg">Doesn\'t have account?<b> Register</b></string>
+
+    //tampilan kedua
+    <string name="email">Email</string>
+    <string name="tlpn">Phone Number</string>
+    <string name="gender1">Male</string>
+    <string name="gender2">Female</string>
+    <string name="repasword">Retype Password</string>
+    <string name="Home">Home Address</string>
+    <string name="oc">Default Location</string>
+    <string name="agree">Agree with Term and Conditions</string>
+    <string name="Regis">Register</string>
+</resources>
