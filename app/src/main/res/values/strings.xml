@@ -13,6 +13,8 @@
     <string name="gender1">Male</string>
     <string name="gender2">Female</string>
     <string name="repasword">Retype Password</string>
+    <string name="perso">Personal</string>
+    <string name="orga">Organization</string>
     <string name="Home">Home Address</string>
     <string name="oc">Default Location</string>
     <string name="agree">Agree with Term and Conditions</string>

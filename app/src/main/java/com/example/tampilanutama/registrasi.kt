@@ -26,6 +26,13 @@ class registrasi : AppCompatActivity() {
             adapter -> adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             greshusSpinner.adapter = adapter
         }
+
+        //job
+        val gjobSpinner : Spinner = findViewById(R.id.kerjob)
+        ArrayAdapter.createFromResource(this,R.array.Jb,R.layout.spstyle).also {
+            adapter -> adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            gjobSpinner.adapter = adapter
+        }
     }
     fun onRadioButtonClicked(view: View){
         if(view is RadioButton){
