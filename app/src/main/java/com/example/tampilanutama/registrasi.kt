@@ -48,13 +48,12 @@ private lateinit var btn : Button
                     t1.setError("Username tidak boleh kosong!")
                 }
                 else {
-                    val intent = Intent(this, profil::class.java).apply {
-                        putExtra(EXTRA_MESSAGE,msg)
+
+                        startActivity(Intent(this, selaid3::class.java))
                     }
                 }
-                startActivity(Intent(this, selaid3::class.java))
+
                 }
-        tulbar.setNavigationIcon(R.drawable.ic_header_back)
 
     }
     fun onRadioButtonClicked(view: View){
@@ -62,4 +61,4 @@ private lateinit var btn : Button
             val checked = view.isChecked
         }
     }
-}
+
