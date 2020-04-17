@@ -35,12 +35,9 @@ private lateinit var btn : Button
             gjobSpinner.adapter = adapter
         }
 
-        //tulbar.setNavigationIcon(R.drawable.ic_header_back)
+        tulbar.setNavigationIcon(R.drawable.ic_header_back)
 
-        //btn2 = findViewById(R.id.tulbar)
-        btn2.setOnClickListener{
-            startActivity(Intent(this,MainActivity::class.java))
-        }
+        btn2 = findViewById(R.id.tulbar)
             btn = findViewById(R.id.tmbl1)
             btn.setOnClickListener{
                 val t1 = findViewById<EditText>(R.id.editText3)
