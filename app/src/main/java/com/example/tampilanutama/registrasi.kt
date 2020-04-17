@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.*
 import kotlinx.android.synthetic.main.activity_registrasi.*
 
+const val EXTRA_MESSAGE = "com.example.mainmenu.MESSAGE"
 class registrasi : AppCompatActivity() {
 private lateinit var btn : Button
     private lateinit var btn2 : Button
@@ -35,7 +36,7 @@ private lateinit var btn : Button
             gjobSpinner.adapter = adapter
         }
 
-
+            tulbar.setNavigationIcon(R.drawable.ic_header_back)
             btn = findViewById(R.id.tmbl1)
             btn.setOnClickListener{
                 val t1 = findViewById<EditText>(R.id.editText3)
@@ -45,8 +46,13 @@ private lateinit var btn : Button
                 {
                     t1.setError("Username tidak boleh kosong!")
                 }
-                startActivity(Intent(this,selaid3::class.java))
-            }
+                else {
+                    val intent = Intent(this, profil::class.java).apply {
+                        putExtra(EXTRA_MESSAGE,msg)
+                    }
+                }
+                startActivity(Intent(this, selaid3::class.java))
+                }
         tulbar.setNavigationIcon(R.drawable.ic_header_back)
 
     }

@@ -31,4 +31,20 @@
     <string name="ketiga">enter verification code here..</string>
     <string name="keempat">SEND</string>
     <string name="kelima">Doesn\'t get the code?<b> Resend</b></string>
+    
+    //tampilan kelima
+    <string name="angkagive">75</string>
+    <string name="give">BLOOD GIVE</string>
+    <string name="angkarecieve">100</string>
+    <string name="recieve">BLOOD RECEIVED</string>
+    <string name="angkathanks">330</string>
+    <string name="thanks">THANKS</string>
+    <string name="kata1">Searchh Donor</string>
+    <string name="kata2">Blood Needed</string>
+    <string name="kata3">Message</string>
+    <string name="kata4">Donor History</string>
+    <string name="subkata1">Search donor near you</string>
+    <string name="subkata2">4 User need blood</string>
+    <string name="subkata3">5 New Messages</string>
+    <string name="subkata4">5 Gives 2 Recieved</string>
 </resources>
