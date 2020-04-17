@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import kotlinx.android.synthetic.main.activity_registrasi.*
 
 class registrasi : AppCompatActivity() {
 private lateinit var btn : Button
+    private lateinit var btn2 : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrasi)
@@ -32,12 +34,25 @@ private lateinit var btn : Button
             adapter -> adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             gjobSpinner.adapter = adapter
         }
-        btn = findViewById(R.id.tmbl1)
-        btn.setOnClickListener{
-            val t1 = findViewById<EditText>(R.id.editText3)
-            val msg = t1.text.toString()
-            startActivity(Intent(this,verifikasiakun::class.java))
+
+        tulbar.setNavigationIcon(R.drawable.ic_header_back)
+
+        btn2 = findViewById(R.id.tulbar)
+        btn2.setOnClickListener{
+            startActivity(Intent(this,MainActivity::class.java))
         }
+            btn = findViewById(R.id.tmbl1)
+            btn.setOnClickListener{
+                val t1 = findViewById<EditText>(R.id.editText3)
+                val msg = t1.text.toString()
+                val t2 = findViewById<Spinner>(R.id.spdarah)
+                if(msg.isEmpty())
+                {
+                    t1.setError("Username tidak boleh kosong!")
+                }
+                startActivity(Intent(this,verifikasiakun::class.java))
+            }
+
     }
     fun onRadioButtonClicked(view: View){
         if(view is RadioButton){
