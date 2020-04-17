@@ -48,7 +48,6 @@ private lateinit var btn : Button
                 startActivity(Intent(this,selaid3::class.java))
             }
         tulbar.setNavigationIcon(R.drawable.ic_header_back)
-        btn2 = findViewById(R.id.tulbar)
 
     }
     fun onRadioButtonClicked(view: View){
