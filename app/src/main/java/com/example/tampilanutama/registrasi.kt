@@ -10,7 +10,6 @@ import kotlinx.android.synthetic.main.activity_registrasi.*
 const val EXTRA_MESSAGE = "com.example.mainmenu.MESSAGE"
 class registrasi : AppCompatActivity() {
 private lateinit var btn : Button
-    private lateinit var btn2 : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrasi)
