@@ -35,9 +35,7 @@ private lateinit var btn : Button
             gjobSpinner.adapter = adapter
         }
 
-        tulbar.setNavigationIcon(R.drawable.ic_header_back)
 
-        btn2 = findViewById(R.id.tulbar)
             btn = findViewById(R.id.tmbl1)
             btn.setOnClickListener{
                 val t1 = findViewById<EditText>(R.id.editText3)
@@ -49,6 +47,8 @@ private lateinit var btn : Button
                 }
                 startActivity(Intent(this,selaid3::class.java))
             }
+        tulbar.setNavigationIcon(R.drawable.ic_header_back)
+        btn2 = findViewById(R.id.tulbar)
 
     }
     fun onRadioButtonClicked(view: View){
