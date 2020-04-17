@@ -10,9 +10,5 @@ private lateinit var texte : TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profil)
-        texte = findViewById(R.id.layarkaca1)
-        val nama = intent.getStringExtra(EXTRA)
-        val kluaran = ""+nama
-        texte.setText(kluaran)
     }
 }

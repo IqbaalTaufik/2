@@ -7,30 +7,16 @@
     android:background="@color/putih"
     tools:context=".registrasi">
 
-    <Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/tulbar"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:background="@drawable/ic_header"
-        android:navigationIcon="@drawable/ic_header_back"
+        app:navigationIcon="@drawable/ic_header_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="187dp"
-        android:layout_marginBottom="4dp"
-        android:text="@string/Regis"
-        android:textColor="@color/putih"
-        android:textSize="22dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tulbar"
-        app:layout_constraintEnd_toEndOf="@+id/tulbar"
-        app:layout_constraintStart_toStartOf="@+id/tulbar"
-        app:layout_constraintTop_toTopOf="@+id/tulbar" />
 
     <LinearLayout
         android:id="@+id/ly1"
