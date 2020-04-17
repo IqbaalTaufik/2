@@ -11,7 +11,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         val textreg = findViewById(R.id.textreg) as TextView
         textreg.setOnClickListener{
             startActivity(Intent(this,registrasi::class.java))

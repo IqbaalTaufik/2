@@ -1,15 +1,15 @@
 package com.example.tampilanutama
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
-class Verifikasi : AppCompatActivity() {
-private lateinit var btn3 : Button
+class V1 : AppCompatActivity() {
+    private lateinit var btn3 : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_verifikasi)
+        setContentView(R.layout.activity_v1)
         btn3 = findViewById(R.id.button3)
         btn3.setOnClickListener{
             startActivity(Intent(this,verifikasiakun::class.java))
