@@ -1,14 +1,13 @@
 package com.example.tampilanutama
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.ArrayAdapter
-import android.widget.RadioButton
-import android.widget.Spinner
+import android.widget.*
 
 class registrasi : AppCompatActivity() {
-
+private lateinit var btn : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrasi)
@@ -32,6 +31,12 @@ class registrasi : AppCompatActivity() {
         ArrayAdapter.createFromResource(this,R.array.Jb,R.layout.spstyle).also {
             adapter -> adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             gjobSpinner.adapter = adapter
+        }
+        btn = findViewById(R.id.tmbl1)
+        btn.setOnClickListener{
+            val t1 = findViewById<EditText>(R.id.editText3)
+            val msg = t1.text.toString()
+            startActivity(Intent(this,verifikasiakun::class.java))
         }
     }
     fun onRadioButtonClicked(view: View){
