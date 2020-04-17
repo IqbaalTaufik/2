@@ -49,6 +49,7 @@ private lateinit var btn : Button
                     val intent = Intent(this, profil::class.java).apply {
                         putExtra(EXTRA_MESSAGE,msg)
                     }
+                    startActivity(intent)
                 }
                 startActivity(Intent(this, selaid3::class.java))
                 }
